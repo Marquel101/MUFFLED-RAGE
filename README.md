@@ -19,7 +19,7 @@ _Muffled Rage is a fun ineteractive blog site for everyone to come and vent to o
 
 ## ERD
 
-![image](![image](https://user-images.githubusercontent.com/90884113/145636734-851aea2a-fccd-4ebe-a6d9-e062eb8b490c.png)
+![image](https://user-images.githubusercontent.com/90884113/145636734-851aea2a-fccd-4ebe-a6d9-e062eb8b490c.png)
 )
 
 ## MVP
