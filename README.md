@@ -1,154 +1,143 @@
-# PROJECT 4 README <!-- omit in toc -->
+# Muffled Rage
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
+_Muffled Rage is a fun ineteractive blog site for everyone to come and vent to others about their problems. Things happen everyday that we wish didn't. It's hard and frustrating sometimes. This is a place to let out that frustration. Let us know what's upsetting and how you feel about it._
+#### [Deployed Site]()
 
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
+#### [Wireframes](https://www.figma.com/file/IDihqsK8ipVgWMYLPBH7ht/MUFFLED-RAGE?node-id=0%3A1)
 
-<br>
+#### [Component Hierarchy](https://whimsical.com/p4-DveukFCag5E77ePgU72obf)
 
-## Overview
+#### [ERD](https://drive.google.com/file/d/1jm_TARvJTkAGDhXE9THKfxuuQdFMHo9f/view?usp=sharing)
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+## Wireframes
 
+![image](https://i.imgur.com/0ecp8aT.jpg)
 
-<br>
+## Component Hierarchy
+
+![image](https://user-images.githubusercontent.com/90884113/145636117-a31ca076-eb4e-4cd0-a73f-52b8d311c2cb.png)
+
+## ERD
+
+![image](![image](https://user-images.githubusercontent.com/90884113/145636734-851aea2a-fccd-4ebe-a6d9-e062eb8b490c.png)
+)
 
 ## MVP
+#### Planning 
+*	Have a thoroughly developed README.md file
+*	Take time to figure out my strongest and weakest abilities, in terms of coding
+*	Create a Whimsicle document to convey the data flow with component hierarchy included
+*	Create a detailed Figma wireframe
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+#### Client (Front End)
+*	Have a working, interactive React app build using npx create-react-app client
+*	Utilize functional and class React components appropriately
+*	Use only React for DOM Manipulation
+*	Consume data from your API and render that data in the components
+*	Utilize React Router for client-side routing
+*	Have a home screen, sign in screen, sign-up screen, post screen and details screen
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+#### Server (Back End)
+* Have working controller actions for full-CRUD
 
-<br>
+#### Styling
+*	Be styled with CSS
+*	Use flexbox or CSS Grid
+*	Implement responsive design on at least 2 screen sizes (including desktop) using a media query (mobile)
 
-### Goals
+#### Linting
+*	Indent properly
+*	Utilize high-quality, sematic, variable names
+*	Follow camelCase, kebab-case, PascalCase and snake_case conventions
+*	Remove any unnecessary boilerplate files and code
+*	Remove all console.log()’s and commented out code
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+#### Deployment
+*	Get website deployed and fully functional
 
-<br>
+#### Procedural
+*	Have frequent commits throughout the span of the project
 
-### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+## Post-MVP
+* Add comments and likes to post
+* Implement a carousel to cycle through cards
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-
-<br>
-
-### Client (Front End)
-
-#### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
-
-#### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
-``` structure
-
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
+## Component Architecture
 
 ```
 
-#### Time Estimates
+src
+|__assets/
+    |__fonts
+    |__images
+|__components/
+  |__
+    |__
+    |__
+|__containers/
+    |__nav/
+|__layouts/
+  |__layout
+    |__layout.css
+    |__layout.jsx
+|__screens/
+    |__home/splash
+      |__splash.css
+      |__splash.jsx
+    |__postCreate
+      |__postCreate.css
+      |__postCreate.jsx
+    |__postEdit
+      |__postEdit.css
+      |__postEdit.jsx
+    |__login
+      |__login.css
+      |__login.jsx
+    |__register
+      |__register.css
+      |__register.jsx
+    |__feed
+      |__feed.css
+      |__feed.jsx
+|__services/
+    |__apiConfig.js
+    |__auth.js
+    |__posts.js
+|__App.css
+|__App.js
+|__index.css
+|__index.js
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+```
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+## Time Estimates
 
-<br>
+| Task        | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------- | :------: | :------------: | :-----------: | :---------: |
+| A | H | 4 hrs | 4 hrs | TBD |
+| B | H | 4 hrs | 4 hrs | TBD |
+| C | H | 4 hrs | 4 hrs | TBD |
+| D | H | 4 hrs | 4 hrs | TBD |
+| E | H | 4 hrs | 4 hrs | TBD |
+| F | H | 4 hrs | 4 hrs | TBD |
+| G | H | 4 hrs | 4 hrs | TBD |
+| H | H | 4 hrs | 4 hrs | TBD |
+| I | H | 4 hrs | 4 hrs | TBD |
+| J | H | 4 hrs | 4 hrs | TBD |
+| K | H | 4 hrs | 4 hrs | TBD |
+| L | H | 4 hrs | 4 hrs | TBD |
 
-### Server (Back End)
+### Code Showcase
+```
 
-#### ERD Model
+```
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
-<br>
-
-***
-
-## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
-***
-
-## Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
+### Code Issues & Resolutions
+1. 
+* 
+2. 
+* 
+3. 
+* 
