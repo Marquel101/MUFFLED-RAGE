@@ -116,18 +116,14 @@ src
 
 | Task        | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------- | :------: | :------------: | :-----------: | :---------: |
-| A | H | 4 hrs | 4 hrs | TBD |
-| B | H | 4 hrs | 4 hrs | TBD |
-| C | H | 4 hrs | 4 hrs | TBD |
-| D | H | 4 hrs | 4 hrs | TBD |
-| E | H | 4 hrs | 4 hrs | TBD |
-| F | H | 4 hrs | 4 hrs | TBD |
-| G | H | 4 hrs | 4 hrs | TBD |
-| H | H | 4 hrs | 4 hrs | TBD |
-| I | H | 4 hrs | 4 hrs | TBD |
-| J | H | 4 hrs | 4 hrs | TBD |
-| K | H | 4 hrs | 4 hrs | TBD |
-| L | H | 4 hrs | 4 hrs | TBD |
+| BACK-END | H | 12 hrs |  hrs | TBD |
+| Auth | H | 4 hrs |  hrs | TBD |
+| CSS | H | 20 hrs |  hrs | TBD |
+| SERVICES | H | 8 hrs |  hrs | TBD |
+| SORTS | H | 5 hrs |  hrs | TBD |
+| PLUG INS | H | 8 hrs |  hrs | TBD |
+| DEBUG | H | 8 hrs |  hrs | TBD |
+
 
 ### Code Showcase
 ```
