@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :update, :destroy]
-
+  before_action :set_post, only: :show
+  before_action :authorize_request, only: :create
+  before_action :set_user_food, only: [:destroy, :update]
   # GET /posts
   def index
     @posts = Post.all
@@ -16,9 +17,9 @@ class PostsController < ApplicationController
   # POST /posts
   def create
     @post = Post.new(post_params)
-
+    @post.user = @current_user
     if @post.save
-      render json: @post, status: :created, location: @post
+      render json: @post, status: :created
     else
       render json: @post.errors, status: :unprocessable_entity
     end
@@ -44,8 +45,12 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
     end
 
+    def set_user_food
+      @post = @current_user.foods.find(params[:id])
+    end
+
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:name, :user_id)
+      params.require(:post).permit(:name, :post_id)
     end
 end
