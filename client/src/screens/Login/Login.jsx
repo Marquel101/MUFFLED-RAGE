@@ -21,13 +21,13 @@ export default function Login(props) {
     }
  
     return (
-        <>
+        <div className="login">
         <header className="header">
-            <h1>MUFFLED <span>RAGE</span></h1>
+            <h1><span>MUFFLED</span> RAGE</h1>
         </header>
       <div className="box">
         <section className="logincontainer">
-          <div className="login__header">Login</div>
+          <div className="login__header">GET IN HERE!</div>
           <form onSubmit={(e)=> {
             e.preventDefault()
             handleLogin(formData)
@@ -54,16 +54,16 @@ export default function Login(props) {
             </div>
             <br></br>
             <div className="auth_buttons">
-            <button type="submit">SUBMIT</button>
-            <Link to='/register'><button>REGISTER</button></Link>
+            <button type="submit" className="submit">SUBMIT</button>
+            <Link to='/register'><button className="register">REGISTER</button></Link>
             </div>
           </form>
         </section>  
       </div>
       <div className="bttm__btn2"> 
-                <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}>HOME</Link>
-                </div>
-    </>
+            <Link to="/" style={{ color: 'inherit', textDecoration:'inherit'}}>HOME</Link>
+        </div>
+    </div>
 
     )
 }
