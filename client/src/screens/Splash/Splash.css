@@ -1,0 +1,75 @@
+.intro {
+    padding: 34px 30px 12px 30px;
+    text-align: center;
+}
+
+.point__one {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(201, 0, 0, 0.466);
+    backdrop-filter: blur(5px);
+  }
+.point__two {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(141, 84, 37, 0.514);
+    backdrop-filter: blur(5px);
+  }
+.point__three {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(37, 131, 33, 0.637);
+    backdrop-filter: blur(5px);
+  }
+.point__pics {
+    width: 100%;
+    height: auto
+}
+
+.point__one,
+.point__two,
+.point__three {
+    margin-bottom: -4px;
+}
+.bottom {
+    margin: 5px 0 40px 0
+}
+.bttm__phrase2 {
+    margin-top: -17px;
+}
+
+.bttm__btn {
+    color: white;
+    background-color: red;
+    margin: 0 40vw;
+    padding: 10px 0;
+    border-radius: 4px;
+    transition-duration: 0.2s
+}
+
+.bttm__btn:hover {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+@media only screen and (min-width: 570px) {
+    .intro {
+        margin: 0 80px;
+        font-size: large;
+        
+    }
+}
+@media only screen and (min-width: 794px) {
+    .intro {
+        margin: 0 140;
+        font-size: larger;  
+    }
+}

@@ -6,7 +6,7 @@ import { getPosts } from '../services/posts'
 
 export default function Feed() {
     const [feed, setFeed] = useState([])
-useEffect(() => {
+    useEffect(() => {
     const fetchFeed = async () => {
         const posts = await getPosts()
         setFeed(posts)
