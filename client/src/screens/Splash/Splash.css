@@ -73,3 +73,46 @@
         font-size: larger;  
     }
 }
+@media only screen and (min-width: 850px) {
+    .box__one,
+    .box__two,
+    .box__three {
+        display: flex;
+        flex-direction: row;
+        margin-left:40px;
+        justify-content: center;
+        align-content: center;
+        margin: 12px 0;
+    }
+    
+    .point__pics {
+        width: 33vw;
+        height: 33vw; 
+        margin-right: 149px;
+    }
+    .point__one,
+    .point__two,
+    .point__three {
+        
+        width: 23%;
+        height: auto;
+        text-align: center;
+        font-size: 3vw;
+        
+    }
+    .point__one {
+        background-color:rgba(201, 0, 0, 0.466);
+        margin: 7% -30px 11% 149px;
+        padding: 2.3% 5px 5px;
+    }
+    .point__two {
+        background-color:#c6a67f6c;
+        margin: 7% -30px 10% 149px;
+        padding: 1% 5px 0 5px;
+    }
+    .point__three {
+        background-color:#6b974f7c;
+        margin: 7% -30px 10% 149px;
+        padding: 1% 5px 0 5px;
+    }
+}
