@@ -14,5 +14,7 @@ User.destroy_all
 puts "#{User.count} users created"
 
 Post.create!(name: "test", user: @admin)
+Post.create!(name: "test1", user: @admin)
+Post.create!(name: "test2", user: @admin)
 
 puts "#{Post.count} post(s) created"
