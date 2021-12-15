@@ -38,7 +38,7 @@ export default function Splash({user, handleLogout}) {
                     </div>
                 </div>
                 <div className="bttm__btn"> 
-                <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit'}}>I'M MAD!</Link>
+                <Link to={user ? "/feed" : "/login" } style={{ color: 'inherit', textDecoration: 'inherit'}}>I'M MAD!</Link>
                 </div>
             </div>
         </div>

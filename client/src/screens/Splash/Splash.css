@@ -86,8 +86,8 @@
     }
     
     .point__pics {
-        width: 33vw;
-        height: 33vw; 
+        width: 32vw;
+        height: 29vw; 
         margin-right: 149px;
     }
     .point__one,
@@ -95,7 +95,7 @@
     .point__three {
         
         width: 23%;
-        height: auto;
+        height: 22%;
         text-align: center;
         font-size: 3vw;
         
