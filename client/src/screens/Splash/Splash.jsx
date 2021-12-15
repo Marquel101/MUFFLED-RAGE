@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import Layout from '../../components/layouts/Layout'
 import './Splash.css'
 
-export default function Splash({user}) {
+export default function Splash({user, handleLogout}) {
     return (
-        <Layout user= {user}>
+        <Layout user= {user} handleLogout={handleLogout}>
         <div>
             <div className="intro">
             <h2> A SAFE SPACE TO BLOW OFF SOME STEAM FROM YOUR EVERYDAY STRUGGLES OF LIFE </h2>

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router';
 import './App.css';
-import Create from './screens/Create';
-import Edit from './screens/Edit';
-import Feed from './screens/Feed';
-import Login from './screens/Login';
-import MyPost from './screens/MyPost';
-import Register from './screens/Register';
+import Create from './screens/Create/Create';
+import Edit from './screens/Edit/Edit';
+import Feed from './screens/Feed/Feed';
+import Login from './screens/Login/Login';
+import MyPost from './screens/MyPost/MyPost';
+import Register from './screens/Register/Register';
 import Splash from './screens/Splash/Splash';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 
@@ -45,7 +45,7 @@ function App() {
     <div className="App">
         <Switch>
           <Route exact path='/'> 
-            <Splash user={user} setUser={setUser} />
+            <Splash user={user} handleLogout={handleLogout} />
           </Route> 
           <Route path='/login'>
             <Login user={user} setUser={setUser} handleLogin = {handleLogin}/>
@@ -54,16 +54,16 @@ function App() {
             <Register user={user} setUser={setUser} handleRegister={handleRegister}/>
           </Route>
           <Route path='/feed'>
-            <Feed user={user} setUser={setUser} />
+            <Feed user={user} handleLogout={handleLogout} />
           </Route>
           <Route path='/newrage'>
-            <Create user={user} setUser={setUser} />
+            <Create user={user} handleLogout={handleLogout} />
           </Route>
           <Route path='/editrage/:id'>
-            <Edit user={user} setUser={setUser} />
+            <Edit user={user} handleLogout={handleLogout} />
           </Route>
           <Route path='/myrage'>
-            <MyPost user={user} setUser={setUser} />
+            <MyPost user={user} handleLogout={handleLogout} />
           </Route>
         </Switch>
     </div>
