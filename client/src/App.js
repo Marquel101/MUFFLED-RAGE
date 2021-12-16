@@ -9,7 +9,7 @@ import MyPost from './screens/MyPost/MyPost';
 import Register from './screens/Register/Register';
 import Splash from './screens/Splash/Splash';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import { deletePost, getPosts, postPost } from './services/posts';
+import { deletePost, getPosts, postPost, putPost } from './services/posts';
 
 
 function App() {
@@ -62,9 +62,20 @@ function App() {
     await deletePost(id)
     setFeed(prevState=> prevState.filter(post => post.id !== id))
   }
+
+  const handleUpdate = async (id, formData) => {
+    const newPost = await putPost(id, formData)
+    setFeed(prevState=> prevState.map(post => {
+      return post.id === parseInt(id) ? newPost : post
+    }))
+    history.push('/feed')
+  }
   return (
     <div className="App">
         <Switch>
+          <Route path="/posts/:id/edit">
+            <Edit feed={feed}/>
+            </Route>
           <Route exact path='/'> 
             <Splash user={user} handleLogout={handleLogout} />
           </Route> 
@@ -81,7 +92,7 @@ function App() {
             <Create user={user} handleLogout={handleLogout} handleCreate = {handleCreate}/>
           </Route>
           <Route path='/editrage/:id'>
-            <Edit user={user} handleLogout={handleLogout} />
+            <Edit user={user} handleLogout={handleLogout} handleUpdate={handleUpdate}/>
           </Route>
           <Route path='/myrage'>
             <MyPost user={user} handleLogout={handleLogout} />
