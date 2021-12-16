@@ -70,6 +70,7 @@ function App() {
     }))
     history.push('/feed')
   }
+  
   return (
     <div className="App">
         <Switch>
@@ -92,7 +93,7 @@ function App() {
             <Create user={user} handleLogout={handleLogout} handleCreate = {handleCreate}/>
           </Route>
           <Route path='/editrage/:id'>
-            <Edit user={user} handleLogout={handleLogout} handleUpdate={handleUpdate}/>
+            <Edit user={user} handleLogout={handleLogout} handleUpdate={handleUpdate} />
           </Route>
           <Route path='/myrage'>
             <MyPost user={user} handleLogout={handleLogout} />

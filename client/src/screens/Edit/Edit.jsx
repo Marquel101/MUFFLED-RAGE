@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom'
 import Layout from '../../components/layouts/Layout'
 
 export default function Edit({user, handleLogout , feed, handleUpdate }) {
-    console.log(feed)
 
     const [formData, setFormData] = useState({
         name: ''
         })
     const {name}= formData
-    const { id } = useParams
+    const { id } = useParams()
+    
 
     useEffect(()=>{
         const prefillForm = () => {
-           const post = feed.find((item) => item.id == id)
+           const post = feed.find((item) => item.id === parseInt(id))
            setFormData({name: post.name})
         }
        if (feed.length) prefillForm()

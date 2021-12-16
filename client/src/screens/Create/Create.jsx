@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Layout from '../../components/layouts/Layout'
-import { postPost } from '../../services/posts'
 
 
 export default function Create({user, handleLogout, handleCreate }) {

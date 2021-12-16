@@ -1,5 +1,4 @@
 import React from 'react'
-import { Redirect } from 'react-router'
 import { Link } from 'react-router-dom'
 import Layout from '../../components/layouts/Layout'
 import './Splash.css'
@@ -14,17 +13,17 @@ export default function Splash({user, handleLogout}) {
             <div className="splash__boxes">
                 <div className="box__one">
                     <h2 className="point__one">WORK GETTING THE BEST OF YOU?</h2>
-                    <img src="https://i.imgur.com/2oBqftB.jpg" className="point__pics"/>
+                    <img src="https://i.imgur.com/2oBqftB.jpg" alt="ANGRY WORK" className="point__pics"/>
                 </div>
                
                 <div className="box__two">
                     <h2 className="point__two">FAMILY ANNOYING YOU IN YOUR FREE TIME?</h2>
-                    <img src="https://i.imgur.com/KdPBvJm.jpg" className="point__pics"/>
+                    <img src="https://i.imgur.com/KdPBvJm.jpg" alt="ANNOYING KID" className="point__pics"/>
                 </div>
                
                 <div className="box__three">
                     <h2 className="point__three">ANGRY THAT YOUR NEIGHBOR KEEPS TAKING YOUR SPOT?</h2>
-                    <img src="https://i.imgur.com/5MZgHqV.jpg" className="point__pics"/>
+                    <img src="https://i.imgur.com/5MZgHqV.jpg" alt="NEIGHBOR MAD" className="point__pics"/>
                 </div>
             </div>
 
