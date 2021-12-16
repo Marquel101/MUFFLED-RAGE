@@ -1,0 +1,29 @@
+.nav__space {
+    background-color: black;
+    font-family: 'Tauri', sans-serif;
+}
+
+.title{
+     color: white;
+     display: flex;
+     justify-content: center;  
+     padding: 5px;
+
+ }
+.muffled {
+    margin-right: 5px;
+}
+ .rage {
+     color: red;
+ }
+
+ .nav__links {
+     display: flex;
+     justify-content: space-between;
+     color: red;
+ }
+
+span {
+     color:rgb(255, 255, 255);
+ }
+

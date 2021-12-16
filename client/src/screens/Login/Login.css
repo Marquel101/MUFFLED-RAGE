@@ -1,0 +1,81 @@
+
+.header {
+    color: red;
+}
+.logincontainer {
+    padding: 40px 0;
+    background-color: white;
+    margin-top: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 350px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 20px;
+  }
+  
+  .login__header {
+    margin: 0px 120px 30px 120px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  .text__signin__1 {
+    margin: 15px 0 5px 0;
+    text-align: left;
+    padding: 0 110px;
+    font-size: 12px;
+  }
+  
+  .text__signin__2 {
+    margin: 20px 0 5px 0;
+    text-align: left;
+    padding: 0 110px;
+    font-size: 12px;
+  }
+  
+  .password {
+    margin-bottom: -20px;
+  }
+ 
+.submit {
+    color: white;
+    background-color: red;
+    padding: 10px 5px;
+    border-radius: 4px;
+    transition-duration: 0.2s
+}
+.register {
+    color: red;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 4px;
+    transition-duration: 0.2s
+}
+ 
+  
+  .bttm__btn2 {
+    color: white;
+    background-color: red;
+    margin: 0 42vw 050px 42vw;
+    padding: 10px 0;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+    text-align: center;
+}
+
+.bttm__btn2:hover {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+.auth_buttons {
+    margin-top: 10px;
+}
+
+.box {
+    margin-top: -110px;
+}
