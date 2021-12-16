@@ -6,15 +6,8 @@ import { getPosts } from '../../services/posts'
 
 
 
-export default function Feed({user, handleLogout}) {
-    const [feed, setFeed] = useState([])
-    useEffect(() => {
-    const fetchFeed = async () => {
-        const posts = await getPosts()
-        setFeed(posts)
-    }
-    fetchFeed()
-}, [])
+export default function Feed({user, handleLogout, feed}) {
+    
 
     return (
         <>

@@ -5,7 +5,7 @@ export const getPosts = async () => {
     return resp.data
 }
 
-export const postPost = async post => {
-    const resp = await api.post('/posts', post)
+export const postPost = async (postData) => {
+    const resp = await api.post('/posts', { post : postData})
     return resp.data
 }

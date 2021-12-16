@@ -9,12 +9,22 @@ import MyPost from './screens/MyPost/MyPost';
 import Register from './screens/Register/Register';
 import Splash from './screens/Splash/Splash';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
+import { getPosts, postPost } from './services/posts';
 
 
 function App() {
   const [user, setUser] = useState(null)
   const history = useHistory() 
+  const [feed, setFeed] = useState([])
+  
 
+  useEffect(() => {
+  const fetchFeed = async () => {
+      const posts = await getPosts()
+      setFeed(posts)
+  }
+  fetchFeed()
+}, [])
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -41,6 +51,12 @@ function App() {
     localStorage.removeItem('authToken')
     removeToken()
   }
+
+  const handleCreate = async (post) => {
+    const newPost = await postPost(post)
+    setFeed((prevState) => [...prevState, newPost])
+    history.push('/feed')
+  }
   return (
     <div className="App">
         <Switch>
@@ -54,10 +70,10 @@ function App() {
             <Register user={user} setUser={setUser} handleRegister={handleRegister}/>
           </Route>
           <Route path='/feed'>
-            <Feed user={user} handleLogout={handleLogout} />
+            <Feed user={user} handleLogout={handleLogout} feed = {feed} />
           </Route>
           <Route path='/newrage'>
-            <Create user={user} handleLogout={handleLogout} />
+            <Create user={user} handleLogout={handleLogout} handleCreate = {handleCreate}/>
           </Route>
           <Route path='/editrage/:id'>
             <Edit user={user} handleLogout={handleLogout} />
