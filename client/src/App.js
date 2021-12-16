@@ -68,14 +68,14 @@ function App() {
     setFeed(prevState=> prevState.map(post => {
       return post.id === parseInt(id) ? newPost : post
     }))
-    history.push('/feed')
+    history.push('/posts')
   }
-  
+
   return (
     <div className="App">
         <Switch>
           <Route path="/posts/:id/edit">
-            <Edit feed={feed}/>
+          <Edit user={user} handleLogout={handleLogout} handleUpdate={handleUpdate} feed={feed}/>
             </Route>
           <Route exact path='/'> 
             <Splash user={user} handleLogout={handleLogout} />
@@ -91,9 +91,6 @@ function App() {
           </Route>
           <Route path='/newrage'>
             <Create user={user} handleLogout={handleLogout} handleCreate = {handleCreate}/>
-          </Route>
-          <Route path='/editrage/:id'>
-            <Edit user={user} handleLogout={handleLogout} handleUpdate={handleUpdate} />
           </Route>
           <Route path='/myrage'>
             <MyPost user={user} handleLogout={handleLogout} />
