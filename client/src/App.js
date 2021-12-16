@@ -9,7 +9,7 @@ import MyPost from './screens/MyPost/MyPost';
 import Register from './screens/Register/Register';
 import Splash from './screens/Splash/Splash';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import { getPosts, postPost } from './services/posts';
+import { deletePost, getPosts, postPost } from './services/posts';
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData)
     setUser(userData)
-    history.push('/feed')
+    history.push('/posts')
   }
 
   const handleRegister = async (formData) => {
@@ -55,7 +55,12 @@ function App() {
   const handleCreate = async (post) => {
     const newPost = await postPost(post)
     setFeed((prevState) => [...prevState, newPost])
-    history.push('/feed')
+    history.push('/posts')
+  }
+
+  const handleDelete = async (id) => {
+    await deletePost(id)
+    setFeed(prevState=> prevState.filter(post => post.id !== id))
   }
   return (
     <div className="App">
@@ -69,8 +74,8 @@ function App() {
           <Route path='/register'>
             <Register user={user} setUser={setUser} handleRegister={handleRegister}/>
           </Route>
-          <Route path='/feed'>
-            <Feed user={user} handleLogout={handleLogout} feed = {feed} />
+          <Route path='/posts'>
+            <Feed user={user} handleLogout={handleLogout} feed = {feed} handleDelete={handleDelete}/>
           </Route>
           <Route path='/newrage'>
             <Create user={user} handleLogout={handleLogout} handleCreate = {handleCreate}/>
